@@ -12,11 +12,12 @@ def modify_values(immutable_value, mutable_value):
     # Mutable types (e.g., lists) behave like pass-by-reference
     mutable_value.append(10)
     print(f"Inside function, modified mutable_value: {mutable_value}")
+    return immutable_value
 
 if __name__ == "__main__":
 	# Test the function with both an immutable and a mutable type
 	x = 5                # Immutable type (integer)
-	y = [1, 2, 3]        # Mutable type (list)
+	y = [1, [2, 3], "apple"]        # Mutable type (list)
 
 	print(f"Before function call: x = {x}, y = {y}")
 

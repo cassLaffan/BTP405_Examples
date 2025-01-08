@@ -11,7 +11,12 @@ def add_numbers(a, b):
 if __name__ == "__main__":
 	# Dynamic typing in action
 	x = 10   # x is an int
+	print(x)
 	x = "Hello"   # x is now a string
+	print(x)
+	x = x + str(10)
+	print(x)
+      
       
 	print(add_numbers(10, 20))  # Works fine
-	print(add_numbers("Hello", 20))  # Runtime error: TypeError
+	#print(add_numbers("Hello", 20))  # Runtime error: TypeError
