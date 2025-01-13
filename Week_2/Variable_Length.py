@@ -10,10 +10,20 @@ def greet(*names):
         print(f"Hello, {name}!")
 
 
+# Here, we can make a function where we don't know what the names
+# of our arguments will be!
+def print_info(**kwargs):
+	for key, value in kwargs.items():
+		print(f"{key}: {value}")
+
+
 if __name__ == "__main__":
-    name_list = ["Cass", "Tav", "Craig"]
+	name_list = ["Cass", "Tav", "Craig"]
+	family_list = ["Self", "Brother", "Dad"]
     # Let's see how * unpacks the list above
-    print(*name_list)
+	print(*name_list)
     
 	# Now, we'll see how we can treat iterables as argument lists
-    greet(*name_list)
+	greet(*name_list)
+    
+	print_info(names = name_list, family = family_list)
