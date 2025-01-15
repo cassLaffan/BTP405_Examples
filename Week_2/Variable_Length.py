@@ -25,5 +25,4 @@ if __name__ == "__main__":
     
 	# Now, we'll see how we can treat iterables as argument lists
 	greet(*name_list)
-    
 	print_info(names = name_list, family = family_list)
