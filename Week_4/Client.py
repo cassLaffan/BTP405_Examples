@@ -6,7 +6,9 @@ Note: you need to run client and server in their own terminal/CMD windows.
 
 if __name__ == "__main__":
 	# Client setup
+	# For explanation, see Server file
 	client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	# Connects to server listening
 	client_socket.connect(('localhost', 8000))
 
 	# Send message to server
