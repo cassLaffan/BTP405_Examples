@@ -5,6 +5,9 @@ import time
 In this file, we take a look at threading in python!
 Remember, threads are a lightweight sub-unit of a process.
 These share memory with other threads in the same process!
+
+Remember: A process is an active program, while a thread
+is a sequence of instructions that runs within a process.
 '''
 
 def download_file(file_name):
