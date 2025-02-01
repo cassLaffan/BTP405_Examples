@@ -5,7 +5,9 @@ by using a lock. This means that a thread can only access one resource at
 a time. Again, smart use of functions and not using globals also ensures
 this genrally.
 
-Furthermore, the GIL really makes getting a race condition difficult.
+Furthermore, the GIL as of Python 3.10 really makes getting a race
+condition difficult. It locks byte values from more than one thread at
+a time.
 '''
 
 # Again not a fan of the global
