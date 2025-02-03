@@ -23,7 +23,7 @@ def increment(lock):
 if __name__ == "__main__":
 	lock = threading.Lock()
 	threads = []
-	for _ in range(2):
+	for _ in range(4):
 		thread = threading.Thread(target=increment(lock))
 		threads.append(thread)
 		thread.start()
