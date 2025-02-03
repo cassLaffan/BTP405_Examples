@@ -1,7 +1,8 @@
 from multiprocessing import Process
 import time
 '''
-Here, we're looking at processes! 
+Here, we're looking at processes! Prcoesses are seperate 
+areas of memory, whereas threads share memory.
 '''
 
 def calculate_square(numbers):
